@@ -13,3 +13,11 @@ def services(request):
     return render(request, 'services.html')
 def price(request):
     return render(request, 'price.html')
+def blog_home(request):
+    return render(request, 'blog-home.html')
+def blog_single(request):
+    return render(request, 'blog-single.html')
+def elements(request):
+    return render(request, 'elements.html')
+
+
