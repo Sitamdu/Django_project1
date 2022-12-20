@@ -40,20 +40,20 @@
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
-			          <li><a href="index.html">Home</a></li>
-			          <li><a href="about.html">About</a></li>
-			          <li><a href="services.html">Services</a></li>
-			          <li><a href="portfolio.html">Portfolio</a></li>
-			          <li><a href="price.html">Pricing</a></li>
+			          <li><a href="/">Home</a></li>
+			          <li><a href="about">About</a></li>
+			          <li><a href="services">Services</a></li>
+			          <li><a href="portfolio">Portfolio</a></li>
+			          <li><a href="price">Pricing</a></li>
 			          <li class="menu-has-children"><a href="">Blog</a>
 			            <ul>
-			              <li><a href="blog-home.html">Blog Home</a></li>
-			              <li><a href="blog-single.html">Blog Single</a></li>
+			              <li><a href="blog_home">Blog Home</a></li>
+			              <li><a href="blog_single">Blog Single</a></li>
 			            </ul>
 			          </li>
 			          <li class="menu-has-children"><a href="">Pages</a>
 			            <ul>
-		            	  <li><a href="elements.html">Elements</a></li>
+		            	  <li><a href="elements">Elements</a></li>
 				          <li class="menu-has-children"><a href="">Level 2 </a>
 				            <ul>
 				              <li><a href="#">Item One</a></li>
@@ -62,7 +62,7 @@
 				          </li>
 			            </ul>
 			          </li>
-			          <li><a href="contact.html">Contact</a></li>
+			          <li><a href="contact">Contact</a></li>
 			        </ul>
 			      </nav><!-- #nav-menu-container -->
 		    	</div>
@@ -93,8 +93,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 <h4>Newsletter</h4>
                                 <p>Stay updated with our latest trends</p>
 								<div class="" id="mc_embed_signup">
-									 <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
-									  <div class="input-group">
+									 <form method="POST">
+									  {% csrf_token %}
+										 <div class="input-group">
 									    <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required="" type="email">
 									    <div class="input-group-btn">
 									      <button class="btn btn-default" type="submit">
